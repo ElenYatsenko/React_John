@@ -1,0 +1,11 @@
+.helloTitle {
+  margin: 0 0 25px 0;
+}
+.indent {
+  margin-bottom: 50px;
+}
+@media (max-width: 767.98px) {
+  .helloTitle {
+    margin: 0 0 20px 0;
+  }
+}

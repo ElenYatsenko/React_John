@@ -1,0 +1,61 @@
+.recentPostsColumn {
+  flex: 0 1 50%;
+  padding: 0 10px;
+  margin: 0 0 17px 0;
+}
+.recentPostTitle {
+  display: inline-block;
+  color: inherit;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38 / 26 * 100%;
+  text-decoration: none;
+  transition: color 0.3s ease 0s;
+  margin: 0 0 17px 0;
+}
+.worksCategoryThin {
+  color: #8695a4;
+  font-size: 18px;
+  margin: 0;
+}
+.recentPostInfo {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  line-height: 26 / 18 * 100%;
+}
+.indent {
+  margin: 10px;
+}
+
+.recentPostText {
+  margin: 0 0 15px 0;
+}
+.recentPost {
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 20px;
+}
+.worksItem {
+  padding: 0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media (min-width: 991.98px) {
+  .recentPostTitle:hover {
+    color: #ff6464;
+  }
+}
+@media (max-width: 767.98px) {
+  .recentPostTitle {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+  }
+  .recentPostInfo {
+    font-size: 16px;
+  }
+  .recentPost {
+    padding: 15px;
+  }
+}
