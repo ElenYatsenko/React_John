@@ -33,7 +33,7 @@ const Menu = () => {
         }`}
         >
           <NavLink
-            to="."
+            to="/"
             className={setActive}
             onClick={() => closeMenu()}
             exact="true"

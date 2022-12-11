@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import MainLoyout from "../../loyouts/MainLoyout";
-import Home from "../../pages/Home";
-import Works from "../../pages/Works";
-import Blog from "../../pages/Blog";
-import NotFound from "../../pages/../pages/NotFound";
-import WorksDetails from "../../pages/WorksDetails";
+import Home from "../../pages/Home.js";
+import Works from "../../pages/Works.js";
+import Blog from "../../pages/Blog.js";
+import NotFound from "../../pages/../pages/NotFound.js";
+import WorksDetails from "../../pages/WorksDetails.js";
 import styles from "./Header.module.css";
 
 const Header = () => {

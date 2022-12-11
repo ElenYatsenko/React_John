@@ -1,7 +1,7 @@
 import React from "react";
+import PostColumn from "../PostColumn/index.js";
 import styles from "./RecentPosts.module.css";
 import "../../index.css";
-import PostColumn from "../PostColumn/index.js";
 
 const RecentPosts = () => {
   const url = "";
