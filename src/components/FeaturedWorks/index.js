@@ -13,7 +13,7 @@ const FeaturedWorks = ({ featuredWorksTitle, countWorksItem }) => {
         <div className={`${styles.featuredWorksItems} ${styles.works}`}>
           <WorksItem
             imgSrc={require("../../img/works/01.jpg")}
-            imgAlt="#1"
+            imgAlt="1"
             worksTitle="Designing Dashboards"
             worksYear="2020"
             worksCategory="Dashboards"
@@ -23,7 +23,7 @@ const FeaturedWorks = ({ featuredWorksTitle, countWorksItem }) => {
           />
           <WorksItem
             imgSrc={require("../../img/works/02.jpg")}
-            imgAlt="#2"
+            imgAlt="2"
             worksTitle="Vibrant Portraits of 2020"
             worksYear="2018"
             worksCategory="Illustration"
@@ -33,7 +33,7 @@ const FeaturedWorks = ({ featuredWorksTitle, countWorksItem }) => {
           />
           <WorksItem
             imgSrc={require("../../img/works/03.jpg")}
-            imgAlt="#3"
+            imgAlt="3"
             worksTitle=" 36 Days of Malayalam type"
             worksYear="2018"
             worksCategory="Typography"
@@ -44,7 +44,7 @@ const FeaturedWorks = ({ featuredWorksTitle, countWorksItem }) => {
           {countWorksItem > 3 && (
             <WorksItem
               imgSrc={require("../../img/works/04.jpg")}
-              imgAlt="#4"
+              imgAlt="4"
               worksTitle="Components"
               worksYear="2018"
               worksCategory="Components, Design"

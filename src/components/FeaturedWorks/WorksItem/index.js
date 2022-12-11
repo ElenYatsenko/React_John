@@ -11,7 +11,7 @@ const WorksItem = ({
   worksCategory,
   worksText,
 }) => {
-  const url = `works/:details/${imgAlt}`;
+  const url = `works/details/${imgAlt}`;
   return (
     <article className={styles.worksItem}>
       <ImageWork imgSrc={imgSrc} imgAlt={imgAlt} />
