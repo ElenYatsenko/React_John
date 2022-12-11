@@ -3,11 +3,10 @@
   padding: 0px 10px 30px;
   margin: 0px auto;
 }
-/*нужно изменить, когда будет свет*/
 .articleTitle {
   font-size: 34px;
   font-weight: 700;
-  line-height: 147.0588%;
+  line-height: 50 / 34 * 100%;
   margin: 0px 0px 30px 0px;
 }
 .articleInfo {
@@ -25,18 +24,16 @@
   font-size: 18px;
   font-weight: 900;
 }
-/*нужно изменить, когда будет свет*/
 .articleCategory {
   align-self: center;
   font-size: 20px;
-  line-height: 125%;
+  line-height: 29 / 20 * 100%;
   margin: 0px 0px 0px 25px;
 }
-/*нужно изменить, когда будет свет*/
 .articleText p {
   margin: 0px 0px 20px 0px;
   font-size: 16px;
-  line-height: 143.75%;
+  line-height: 24 / 16 * 100%;
   color: #21243d;
 }
 .articleText img {

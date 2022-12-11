@@ -1,13 +1,10 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import imgArticle01 from "../../img/articles/01.jpg";
 import imgArticle02 from "../../img/articles/02.jpg";
 import imgArticle03 from "../../img/articles/03.jpg";
 import styles from "./WorkDetail.module.css";
 
 const WorkDetail = ({ articleTitle, articleCategory, articleYear }) => {
-  const params = useParams();
-  console.log(params);
   return (
     <div className={styles.article}>
       <h1 className={styles.articleTitle}>{articleTitle}</h1>

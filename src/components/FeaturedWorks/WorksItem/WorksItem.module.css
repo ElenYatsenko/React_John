@@ -19,6 +19,10 @@
   line-height: 44 / 30 * 100;
   margin: 0px 0px 15px 0px;
   text-decoration: none;
+  transition: color 0.3s ease 0s;
+}
+.worksTitle:hover {
+  color: #ff6464;
 }
 .worksInfo {
   display: flex;
