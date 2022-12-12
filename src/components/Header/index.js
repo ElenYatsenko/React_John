@@ -8,16 +8,16 @@ import NotFound from "../../pages/../pages/NotFound.js";
 import WorksDetails from "../../pages/WorksDetails.js";
 import styles from "./Header.module.css";
 
-const Header = ({ homepage }) => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <div className={` ${styles.headerMenu} ${styles.menu} `}>
         <Routes>
           <Route path="/" element={<MainLoyout />}>
-            <Route index path="/React_John" element={<Home />}></Route>
+            <Route index element={<Home />}></Route>
             <Route path="works" element={<Works />}></Route>
             <Route
-              path="works/details/1"
+              path="works/:details"
               element={
                 <WorksDetails
                   articleTitle="Designing Dashboards with usability in mind"
@@ -26,8 +26,8 @@ const Header = ({ homepage }) => {
                 />
               }
             ></Route>
-            <Route
-              path="works/details/2"
+            {/* <Route
+              path="works/:details/2"
               element={
                 <WorksDetails
                   articleTitle="Vibrant Portraits of 2020 with usability in mind"
@@ -37,7 +37,7 @@ const Header = ({ homepage }) => {
               }
             ></Route>
             <Route
-              path="works/details/3"
+              path="works/:details/3"
               element={
                 <WorksDetails
                   articleTitle="36 Days of Malayalam type with usability in mind"
@@ -47,7 +47,7 @@ const Header = ({ homepage }) => {
               }
             ></Route>
             <Route
-              path="works/details/4"
+              path="works/:details/4"
               element={
                 <WorksDetails
                   articleTitle="Components with usability in mind"
@@ -55,7 +55,7 @@ const Header = ({ homepage }) => {
                   articleYear="2018"
                 />
               }
-            ></Route>
+            ></Route> */}
             <Route path="blog" element={<Blog />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Route>

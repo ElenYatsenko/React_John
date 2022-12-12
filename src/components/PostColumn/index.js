@@ -27,7 +27,7 @@ const PostColumn = ({
             {recentPostInfo2}
           </span>
         </div>
-        <div className={`${styles.recentPostText} ${"text-"}`}>
+        <div className={`${styles.recentPostText}`}>
           {recentPostText}
         </div>
       </article>
