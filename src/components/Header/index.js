@@ -8,13 +8,13 @@ import NotFound from "../../pages/../pages/NotFound.js";
 import WorksDetails from "../../pages/WorksDetails.js";
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ homepage }) => {
   return (
     <header className={styles.header}>
       <div className={` ${styles.headerMenu} ${styles.menu} `}>
         <Routes>
           <Route path="/" element={<MainLoyout />}>
-            <Route index element={<Home />}></Route>
+            <Route index path="/React_John" element={<Home />}></Route>
             <Route path="works" element={<Works />}></Route>
             <Route
               path="works/details/1"
