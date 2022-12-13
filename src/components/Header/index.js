@@ -17,18 +17,20 @@ const Header = () => {
             <Route index element={<Home />}></Route>
             <Route path="/React_John" element={<Home />}></Route>
             <Route path="works" element={<Works />}></Route>
-            {["/works/:details", ":details"].map((path) => (
-              <Route
-                path={path}
-                element={
-                  <WorksDetails
-                    articleTitle="Designing Dashboards with usability in mind"
-                    articleCategory="Dashboards"
-                    articleYear="2020"
-                  />
-                }
-              />
-            ))}
+            {["/works/:details", ":details", "React_John/details"].map(
+              (path) => (
+                <Route
+                  path={path}
+                  element={
+                    <WorksDetails
+                      articleTitle="Designing Dashboards with usability in mind"
+                      articleCategory="Dashboards"
+                      articleYear="2020"
+                    />
+                  }
+                />
+              )
+            )}
             <Route path="blog" element={<Blog />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Route>
