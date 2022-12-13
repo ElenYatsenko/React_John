@@ -15,47 +15,20 @@ const Header = () => {
         <Routes>
           <Route path="/" element={<MainLoyout />}>
             <Route index element={<Home />}></Route>
+            <Route path="/React_John" element={<Home />}></Route>
             <Route path="works" element={<Works />}></Route>
-            <Route
-              path="works/:details"
-              element={
-                <WorksDetails
-                  articleTitle="Designing Dashboards with usability in mind"
-                  articleCategory="Dashboards"
-                  articleYear="2020"
-                />
-              }
-            ></Route>
-            {/* <Route
-              path="works/:details/2"
-              element={
-                <WorksDetails
-                  articleTitle="Vibrant Portraits of 2020 with usability in mind"
-                  articleCategory="Illustration"
-                  articleYear="2018"
-                />
-              }
-            ></Route>
-            <Route
-              path="works/:details/3"
-              element={
-                <WorksDetails
-                  articleTitle="36 Days of Malayalam type with usability in mind"
-                  articleCategory="Typography"
-                  articleYear="2018"
-                />
-              }
-            ></Route>
-            <Route
-              path="works/:details/4"
-              element={
-                <WorksDetails
-                  articleTitle="Components with usability in mind"
-                  articleCategory="Components"
-                  articleYear="2018"
-                />
-              }
-            ></Route> */}
+            {["/works/:details", ":details"].map((path) => (
+              <Route
+                path={path}
+                element={
+                  <WorksDetails
+                    articleTitle="Designing Dashboards with usability in mind"
+                    articleCategory="Dashboards"
+                    articleYear="2020"
+                  />
+                }
+              />
+            ))}
             <Route path="blog" element={<Blog />}></Route>
             <Route path="*" element={<NotFound />}></Route>
           </Route>
